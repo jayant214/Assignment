@@ -1,0 +1,113 @@
+
+<html>
+
+<head>
+<style>
+
+.chart1 div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: red;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.axis text {
+  font: 15px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+
+</style>
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+<script src = "solution.js"></script>
+
+
+
+</head>
+<body > 
+<div align="center" style="color:white">
+  <br>Batting-Chart<br>
+  </div>
+
+
+<div id="batting-chart" align="center"></div>
+
+
+<br>
+
+
+<div align='center' style="color:white">
+<br>
+<br>
+Centuries Scored
+<br>
+<br>
+<canvas id="pie1" height="200" width="600"></canvas>
+</div><br><br>
+
+<div align='center' style="color:white">
+<br>
+<br>
+Winning Contribution and Losing Contribution
+<br>
+<br>
+<canvas id="pie2" height="200" width="600"></canvas>
+</div><br><br>
+
+
+
+
+<div align='center' style="color:white">
+<br>
+<br>
+Batting against each country
+<br>
+<br>
+<svg class="chart" id='svg3' align='center'></svg>
+</div>
+
+
+<div align='center' style="color:white">
+<br>
+<br>
+Wickets against each country
+<br>
+<br>
+<svg class="chart" id='svg4' align='center'></svg>
+</div><br><br>
+
+
+<div align='center' style="color:white">
+<br>
+<br>
+Runs Conceded against each country
+<br>
+<br>
+<svg class="chart" id='svg5' align='center' ></svg>
+</div><br><br>
+
+
+<!-- <div class="chart1"></div> -->
+    </body>
+    </html>
+    
